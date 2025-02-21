@@ -87,3 +87,14 @@ Machine Learning
         - feature engeneering = design new features by transforming or combining original features
         - polynomial regression = use polynomial functions to define features transformed from original that can represents non linear progressions on linear algorithm
 
+    Classification
+    - logistic regression
+    - 2 outputs = binary classification
+    - class = category
+        false <> true; 0 <> 1; yes <> no; negative class <> positive class
+
+    Logistic Regression:
+        - sigmoid function <> logistic function
+        - g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
+        - when z is a hight negative number, g(z) is close to 0
+        - f w, b(x) = g(z) = g(w * x + b)
