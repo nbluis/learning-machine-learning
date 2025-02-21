@@ -96,5 +96,7 @@ Machine Learning
     Logistic Regression:
         - sigmoid function <> logistic function
         - g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
-        - when z is a hight negative number, g(z) is close to 0
+        - e = euler number
+        - when z is a high negative number, g(z) is close to 0
+        - when z is a high positive number, g(z) is close to 1
         - f w, b(x) = g(z) = g(w * x + b)
