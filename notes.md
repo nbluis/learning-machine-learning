@@ -93,10 +93,17 @@ Machine Learning
     - class = category
         false <> true; 0 <> 1; yes <> no; negative class <> positive class
 
-    Logistic Regression:
-        - sigmoid function <> logistic function
-        - g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
-        - e = euler number
-        - when z is a high negative number, g(z) is close to 0
-        - when z is a high positive number, g(z) is close to 1
-        - f w, b(x) = g(z) = g(w * x + b)
+        Logistic Regression:
+            - sigmoid function <> logistic function
+            - g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
+            - e = euler number
+            - when z is a high negative number, g(z) is close to 0
+            - when z is a high positive number, g(z) is close to 1
+            - f w, b(x) = g(z) = g(w * x + b)
+            - squared error cost function is not goof for logisitc regresion (non-convex, multiple local minimun)
+            - loss function = -yⁱlog(f(xⁱ)) - ( 1 - yⁱ)log(1 - f(xⁱ))
+                - maximum likelihood estimation
+
+    Functions:
+        Linear Regression: w*x + b
+        Logistic Regression: g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
