@@ -107,3 +107,18 @@ Machine Learning
     Functions:
         Linear Regression: w*x + b
         Logistic Regression: g(z) = 1 / 1 + e**(-z) = g = 1/(1+np.exp(-z))
+
+
+    Overfitting / Underfitting
+        Model is (under/over)fitting the training data
+        Undefit - model is too simple to capture the relationships in the data, Wrong Generalization - high bias
+        Overfit - model fits too closely to training data, making it unable to generalize to new data - high variance
+
+        Reduce overvitting:
+            Collect more data
+            Feature Selection
+            Regularization (reduce impact of some features)
+                - Add regularization term to cost function (lambda)
+                - Regularization term increses or reduces the impact of w term. when using small numbers, (ex. 50) will sligntly reduce the impact of w each iteration.
+                - lambda 0 = overfit
+                - lambda high number - underfit
